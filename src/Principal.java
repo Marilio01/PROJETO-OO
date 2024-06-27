@@ -6,6 +6,8 @@ public class Principal {
 		
 		System.out.println(usuario1.getId());
 		
+		Paciente paciente1 = new Paciente("12345678901","12-12-1999","premium","primeira consulta"," "," "," "," ");
+		System.out.println(paciente1.getNascimento());
 
 	}
 

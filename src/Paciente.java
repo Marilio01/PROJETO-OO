@@ -1,23 +1,26 @@
+import java.util.ArrayList;
+import java.util.Date;
+
 public class Paciente extends Usuario {
 	
 	private String cpf;
-	private String nascimento;
-	private String planoDeAssinatura;
-	private String historicoDePagamentos;
+	private Date nascimento;
+	private PlanoAssinatura plano;
+	private ArrayList<HistoricoPagamento> historicoPagamentos;
 	
 	
-	public Paciente(String cpf, String nascimento, String planoDeAssinatura, String historicoDePagamentos,
-			String nome, String email, String senha, String string) {
+	public Paciente(String nome, String email, String senha, String string, String cpf, Date nascimento,
+			PlanoAssinatura plano, ArrayList<HistoricoPagamento> historicoPagamentos) {
 		super(nome, email, senha, string);
 		this.cpf = cpf;
 		this.nascimento = nascimento;
-		this.planoDeAssinatura = planoDeAssinatura;
-		this.historicoDePagamentos = historicoDePagamentos;
+		this.plano = plano;
+		this.historicoPagamentos = historicoPagamentos;
 	}
 
 	
-	public void atualizarPlanoAssinatura(String novoPlano) {
-	        this.planoDeAssinatura = novoPlano;
+	public void atualizarPlanoAssinatura(PlanoAssinatura novoPlano) {
+	        this.plano = novoPlano;
 	}
 	 
 	 
@@ -29,26 +32,29 @@ public class Paciente extends Usuario {
 	}
 	
 	
-	public String getNascimento() {
+	public Date getNascimento() {
 		return nascimento;
 	}
-	public void setNascimento(String nascimento) {
+	public void setNascimento(Date nascimento) {
 		this.nascimento = nascimento;
 	}
 	
 	
-	public String getPlanoDeAssinatura() {
-		return planoDeAssinatura;
+	public PlanoAssinatura getPlano() {
+		return plano;
 	}
-	public void setPlanoDeAssinatura(String planoAssinatura) {
-		this.planoDeAssinatura = planoAssinatura;
+	public void setPlano(PlanoAssinatura plano) {
+		this.plano = plano;
+	}
+
+
+	public ArrayList<HistoricoPagamento> getHistoricoPagamentos() {
+		return historicoPagamentos;
+	}
+	public void setHistoricoPagamentos(ArrayList<HistoricoPagamento> historicoPagamentos) {
+		this.historicoPagamentos = historicoPagamentos;
 	}
 	
 	
-	public String getHistoricoDePagamentos() {
-		return historicoDePagamentos;
-	}
-	public void setHistoricoDePagamentos(String historicoPagamentos) {
-		this.historicoDePagamentos = historicoPagamentos;
-	}
+	
 }

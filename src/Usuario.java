@@ -1,17 +1,29 @@
 import java.util.UUID;
 
 public class Usuario {
-    private String id;
-	private String nome;
-	private String email;
-	private String senha;
+    protected String id;
+    protected String nome;
+    protected String email;
+    protected String senha;
+    
+    
 	public Usuario( String nome, String email, String senha, String string) {
 		this.id =UUID.randomUUID().toString();
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
 	}
-		
+	
+	
+	public boolean login(String email, String senha) {
+		return this.email.equals(email) && this.senha.equals(senha);
+	}
+	
+	
+	public void logout() {
+		System.out.println("Usuário deslogado.");
+	}
+	
 	
 	public String getId() {
 		return id;

@@ -1,14 +1,14 @@
 import java.util.UUID;
 
 public class Usuario {
-    protected String id;
+    protected UUID id;
     protected String nome;
     protected String email;
     protected String senha;
     
     
-	public Usuario( String nome, String email, String senha, String string) {
-		this.id =UUID.randomUUID().toString();
+	public Usuario( String nome, String email, String senha) {
+		this.id = UUID.randomUUID();
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
@@ -25,11 +25,8 @@ public class Usuario {
 	}
 	
 	
-	public String getId() {
+	public UUID getId() {
 		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
 	}
 	public String getNome() {
 		return nome;
@@ -49,4 +46,4 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	}
+}

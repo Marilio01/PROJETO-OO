@@ -1,7 +1,8 @@
 import java.util.Date;
+import java.util.UUID;
 
 public class Consulta {
-    private String id;
+    private UUID id;
     private Date dataHora;
     private Paciente paciente;
     private Médico medico;
@@ -9,7 +10,7 @@ public class Consulta {
     private String observacoes;
 
     public Consulta(String id, Date dataHora, Paciente paciente, Médico medico, String status, String observacoes) {
-        this.id = id;
+        this.id = UUID.randomUUID();
         this.dataHora = dataHora;
         this.paciente = paciente;
         this.medico = medico;
@@ -23,11 +24,8 @@ public class Consulta {
     }
 
     
-    public String getId() {
+    public UUID getId() {
         return id;
-    }
-    public void setId(String id) {
-        this.id = id;
     }
 
     
@@ -68,12 +66,5 @@ public class Consulta {
     }
     public void setObservacoes(String observacoes) {
         this.observacoes = observacoes;
-    }
-
-    
-    @Override
-    public String toString() {
-        return String.format("Consulta: \nID= $s\nData= $s\nPaciente= $s\nMédico: $s\nStatus= $s\nObservações= $s", getId(), getDataHora(), paciente.getNome(),
-        		medico.getNome(), getStatus(), getObservacoes());
-    }
+    }   
 }

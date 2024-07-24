@@ -9,9 +9,9 @@ public class Paciente extends Usuario {
 	private ArrayList<HistoricoPagamento> historicoPagamentos;
 	
 	
-	public Paciente(String nome, String email, String senha, String string, String cpf, Date nascimento,
+	public Paciente(String nome, String email, String senha, String cpf, Date nascimento,
 			PlanoAssinatura plano, ArrayList<HistoricoPagamento> historicoPagamentos) {
-		super(nome, email, senha, string);
+		super(nome, email, senha);
 		this.cpf = cpf;
 		this.nascimento = nascimento;
 		this.plano = plano;
@@ -23,7 +23,13 @@ public class Paciente extends Usuario {
 	        this.plano = novoPlano;
 	}
 	 
-	 
+	  public void visualizarConsultas(ArrayList<Consulta> consultas) {
+	       for (Consulta consulta : consultas) {
+	           if (consulta.getPaciente().equals(this)) {
+	               System.out.println(consulta);
+	           }
+	       }
+	   }
 	public String getCpf() {
 		return cpf;
 	}

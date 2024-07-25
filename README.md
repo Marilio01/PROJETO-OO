@@ -28,16 +28,13 @@ Este repositório contém o código-fonte para um sistema de consultoria médica
 
 ### 1. Clonar o Repositório
 
-```bash
 git clone https://github.com/seu-usuario/sistema-consultoria-medica-java.git
 
 ### 2. Instalar Dpendências
 
-```bash
 cd sistema-consultoria-medica-java
 mvn clean install
 
 ### 3. Executar o Sistema
 
-```bash
 mvn spring-boot:run

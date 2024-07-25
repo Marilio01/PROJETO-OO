@@ -24,6 +24,9 @@ Este repositório contém o código-fonte para um sistema de consultoria médica
 
 [Protótipo do Sistema](https://www.mediafire.com/file/dkywyvu9a1y7guw/Prot%25C3%25B3tipo.pdf/file)
 
+cd sistema-consultoria-medica-java
+mvn clean install
+
 ## Instruções de Instalação e Uso
 
 ### 1. Clonar o Repositório

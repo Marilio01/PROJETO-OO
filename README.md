@@ -22,7 +22,7 @@ Este repositório contém o código-fonte para um sistema de consultoria médica
 
 ## Protótipo do Sistema
 
-[Protótipo do Sistema](https://www.mediafire.com/file/dkywyvu9a1y7guw/Prot%25C3%25B3tipo.pdf/file)
+<a href="https://www.mediafire.com/file/dkywyvu9a1y7guw/Prot%25C3%25B3tipo.pdf/file" target="_blank">Protótipo do Sistema</a>
 
 ## Instruções de Instalação e Uso
 

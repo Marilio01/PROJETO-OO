@@ -28,12 +28,12 @@ Este repositório contém o código-fonte para um sistema de agendamento de cons
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/sistema-consultoria-medica-java.git
+git clone https://github.com/Marilio01/PROJETO-OO.git
 ```
 ### 2. Instalar Dependências
 
 ```bash
-cd sistema-consultoria-medica-java
+cd PROJETO-OO
 mvn clean install
 ```
 ### 3. Executar o Sistema
